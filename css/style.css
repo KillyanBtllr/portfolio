@@ -67,6 +67,20 @@ h6 {
     background-color: #222;
 }
 
+.btn-tableau {
+    padding: 12px 24px;
+    border-color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0f172a;
+    text-decoration: none;
+}
+
+.btn-tableau:hover {
+    background-color: #334155;
+}
+
 .btn-primary {
     border-color: #fff;
     text-transform: uppercase;
@@ -116,7 +130,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl {
-    padding: 20px 40px;
+    padding: 15px 30px;
     border-color: #fff;
     border-radius: 3px;
     text-transform: uppercase;
@@ -675,8 +689,18 @@ section h3.section-subheading {
 
 
 section#contact {
-    background: linear-gradient(to bottom, #334155, #0f172a);
+    position: relative;
+}
 
+section#contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/background-contact.jpg");
+    filter: brightness(30%);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -691,7 +715,7 @@ section#contact .form-group {
 
 section#contact .form-group input,
 section#contact .form-group textarea {
-    padding: 20px;
+    padding: 15px;
 }
 
 section#contact .form-group input.form-control {
@@ -699,7 +723,7 @@ section#contact .form-group input.form-control {
 }
 
 section#contact .form-group textarea.form-control {
-    height: 236px;
+    height: 206px;
 }
 
 section#contact .form-control:focus {
@@ -818,7 +842,7 @@ ul.social-buttons li a:active {
 
 .certif-caption {
     width: 100%;
-    height: 200px;
+    height: 250px;
     padding: 35px 25px 25px 25px;
     max-width: 400px;
     text-align: center;
@@ -990,6 +1014,13 @@ ul.social-buttons li a:active {
     #timeline .timeline-item .timeline-icon {
         left: 0;
     }
+}
+
+.card-date{
+    position: absolute;
+    font-size: 12px;
+    bottom: 10px;
+    right: 30px;
 }
 
 .resume-wrap {
